@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPLANE-A Place Shopping</title>
+    <link rel="stylesheet" href="shoplane.css">
+    <script src="https://kit.fontawesome.com/511efa44c8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/511efa44c8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><a class="aunderline" href="/index.html#">
+            <span>SHOP</span>LANE
+        </a></h1>
+        <div class="navlist">
+            <ul>
+                <!-- <a href="#">
+                    <li>Home</li>
+                </a> -->
+                <a href="#">
+                    <li>Clothings</li>
+                </a>
+                <a href="#">
+                    <li>Accessories</li>
+                </a>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="search-2">
+                
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Search for Clothing and Accessories" />
+            </div>
+
+        </div>
+        <div class="icon"><a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"><span id="addb">0</span></i></a>
+            <span class="image"><img src="/pawan2.jpg" alt=""></span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- img slider section -->
+
+        <section class>
+            <div class="imgslider">
+                <div id="imgslide" class="img">
+                    <!-- <img src="https://shoplane.netlify.app/img/img1.png"> -->
+                </div>
+                <div id="imgslide" class="img">
+                    <!-- <img src="https://shoplane.netlify.app/img/img2.png"> -->
+                </div>
+                <div id="imgslide" class="img">
+                    <!-- <img src="https://shoplane.netlify.app/img/img3.png"> -->
+                </div>
+                <div id="imgslide" class="img">
+                    <!-- <img src="https://shoplane.netlify.app/img/img4.png"> -->
+                </div>
+            </div>
+            <div class="sliderbtn">
+                <button onclick="img()" id="btn"></button>
+                <button id="btn"></button>
+                <button id="btn"> </button>
+                <button id="btn"></button>
+
+            </div>
+        </section>
+
+
+        <!-- fetures -->
+
+        <section class="feturs">
+            <div class="feturscontaionr">
+                <div class="color1">
+                    <div id="color" class="delivery">
+                        <img src="https://shoplane.netlify.app/img/icon1.png">
+                    </div>
+                    <h4>Free Delivery</h4>
+                </div>
+                <div class="color1">
+                    <div id="color" class="moneyback">
+                        <img src="https://shoplane.netlify.app/img/icon2.png">
+                    </div>
+                    <h4>Money Back Gurantee</h4>
+                </div>
+
+                <div class="color1">
+                    <div id="color" class="support">
+                        <img src="https://shoplane.netlify.app/img/icon3.png">
+                    </div>
+                    <h4>Always Support</h4>
+                </div class="color1">
+
+                <div class="color1">
+                    <div id="color" class="payment">
+                        <img src="https://shoplane.netlify.app/img/icon4.png">
+                    </div>
+                    <h4 class="h4-heading">Secure Payment</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clothings for men and womwn card -->
+
+        <section class="items-containor">
+            <div class="clothing-containor">
+                <h1>Clothing for Men and Women</h1>
+
+                <div id="card-section">
+                </div>
+            </div>
+            <div id="A-containor">
+                <h1>Accessories for Men and Women</h1>
+            </div>
+            <div id="Accessories-containor">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-main-containor">
+            <div class="footer1">
+                <h3>ONLINE STORE</h3>
+                <a href="#">
+                    <h5>MEN C LOTHING</h5>
+                    <h5>WOMEN CLOTHING</h5>
+                    <h5>MEN ACCESSORIES</h5>
+                    <h5>WOMEN ACCESSORIES</h5>
+                </a>
+            </div>
+            <div class="footer2">
+                <h3>HELPFUL LINKS</h3>
+                <a href="#">
+                    <h5>HOME</h5>
+                    <h5>ABOUT</h5>
+                    <h5></h5>CONTACT</h5>
+                </a>
+            </div>
+            <div class="footer3">
+                <h3>PARTNERS</h3>
+                <a href="#">
+                    <h5>ZARA</h5>
+                    <h5>PANTALOONS</h5>
+                    <h5>LEVIS</h5>
+                    <h5>UCB</h5>
+                    <h5>+ MANY MORE</h5>
+                </a>
+            </div>
+            <div class="footer4">
+                <h3>ADDRESS</h3>
+                <a href="#">
+                    <h5>BUILDING 101</h5>
+                    <h5>CENTRAL AVENUE</h5>
+                    <h5>LA - 902722</h5>
+                    <h5>UNITED STATES</h5>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="shoplane.js">
+
+    </script>
+</body>
+
+</html>

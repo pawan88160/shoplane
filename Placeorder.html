@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPLANE-A Place Shopping</title>
+    <link rel="stylesheet" href="product-details.css">
+    <script src="https://kit.fontawesome.com/511efa44c8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/511efa44c8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <nav class="navbart1">
+        <h1 class="logo"><a class="aunderline" href="/index.html#">
+            <span>SHOP</span>LANE
+        </a></h1>
+        <div class="navlist">
+            <ul>
+                <!-- <a href="#">
+                    <li>Home</li>
+                </a> -->
+                <a href="#">
+                    <li>Clothings</li>
+                </a>
+                <a href="#">
+                    <li>Accessories</li>
+                </a>
+            </ul>
+        </div>
+        <div class="search">
+            <div class="search-2">
+                
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Search for Clothing and Accessories" />
+            </div>
+
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-cart-shopping"><span id="addb">0</span></i>
+            <span class="image"><img src="/pawan2.jpg" alt=""></span>
+        </div>
+    </nav>
+<main class="maindivtt">
+   <div class="maincontainor-order">
+       <div class="imagplaceorder">
+           <img class="place-img" src="data:image/png;base64,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"/>
+       </div>
+       <div>
+           <h4>Order Placed Successfully!!</h4>
+           <p>We have sent you an email with the order details</p>
+       </div>
+   </div>
+</main>
+    <footer>
+        <div class="footer-main-containor"> 
+            <div class="footer1">
+                <h3>ONLINE STORE</h3>
+                <a href="#">
+                <h5>MEN C LOTHING</h5>
+                <h5>WOMEN CLOTHING</h5>
+                <h5>MEN ACCESSORIES</h5>
+                <h5>WOMEN ACCESSORIES</h5>
+            </a>
+            </div>
+            <div class="footer2">
+                <h3>HELPFUL LINKS</h3>
+                <a href="#">
+                <h5>HOME</h5>
+                <h5>ABOUT</h5>
+                <h5></h5>CONTACT</h5>
+            </a>
+            </div>
+            <div class="footer3">
+                <h3>PARTNERS</h3>
+                <a href="#">
+                <h5>ZARA</h5>
+                <h5>PANTALOONS</h5>
+                <h5>LEVIS</h5>
+                <h5>UCB</h5>
+                <h5>+ MANY MORE</h5>
+            </a>
+            </div>
+            <div class="footer4">
+                <h3>ADDRESS</h3>
+                <a href="#">
+                <h5>BUILDING 101</h5>
+                <h5>CENTRAL AVENUE</h5>
+                <h5>LA - 902722</h5>
+                <h5>UNITED STATES</h5>
+            </a>
+            </div>
+        </div>
+    </footer>
+    <script src="cart.js">
+
+    </script>
+</html>
+</body>
+</html>
